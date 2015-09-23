@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sudoku</title>
+	<link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+<div id="sudoku"></div>
+<script src="data.js"></script>
+<script src="view.js"></script>
+<script>
+window.addEventListener('load', function (e) {
+	function getHashNum() {
+		var hash = location.hash
+		var n = 0
+		if (hash) {
+			var num = +hash.substr(1)
+			if (num >= 0 && num < numbers.length) {
+				n = num
+			}
+		}
+		return n
+	}
+
+	var view = new View()
+
+	view.show(numbers[getHashNum()])
+
+	window.addEventListener('hashchange', function () {
+		console.log('hash changed to' + location.hash)
+		view.show(numbers[getHashNum()])
+	})
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #f0f0f0;
+}
+
+body, input {
+	font: 36px arial, serif;
+	color: #333;
+}
+
+#sudoku {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 450px;
+	height: 450px;
+	margin-top: -227px;
+	margin-left: -227px;
+	border: 2px solid #666;
+	background: #fff url(sudoku-bg.svg) center center no-repeat;
+}
+
+.cell {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+
+	line-height: 50px;
+	text-align: center;
+}
+.cell .val {
+	position: absolute;
+	display: block;
+	border: none;
+	top: 2px;
+	left: 2px;
+	width: 46px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	background: rgba(90%,90%,90%,0.4);
+	transition: all 0.2s;
+	outline: none;
+}
+.cell .empty {
+	color: #999;
+	background: rgba(90%,90%,90%,0.6);
+}
+.cell .val:focus {
+	background: rgba(90%,90%,90%,0.8);
+}
+
+.row-0 { top: 0; }
+.row-1 { top: 50px; }
+.row-2 { top: 100px; }
+.row-3 { top: 150px; }
+.row-4 { top: 200px; }
+.row-5 { top: 250px; }
+.row-6 { top: 300px; }
+.row-7 { top: 350px; }
+.row-8 { top: 400px; }
+
+.col-0 { left: 0; }
+.col-1 { left: 50px; }
+.col-2 { left: 100px; }
+.col-3 { left: 150px; }
+.col-4 { left: 200px; }
+.col-5 { left: 250px; }
+.col-6 { left: 300px; }
+.col-7 { left: 350px; }
+.col-8 { left: 400px; }
+
+.num-1, [num="1"] { color: #f00; }
+.num-2, [num="2"] { color: #fc0; }
+.num-3, [num="3"] { color: #cf0; }
+.num-4, [num="4"] { color: #00f; }
+.num-5, [num="5"] { color: #0cf; }
+.num-6, [num="6"] { color: #0fc; }
+.num-7, [num="7"] { color: #c0c; }
+.num-8, [num="8"] { color: #09c; }
+.num-9, [num="9"] { color: #9c0; }

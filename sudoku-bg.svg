@@ -1,0 +1,40 @@
+<svg version="1.1" baseProfile="full" width="450" height="450" xmlns="http://www.w3.org/2000/svg">
+	<style>
+	/* <![CDATA[ */
+	.strong {
+		stroke: #999;
+		stroke-width: 2px;
+	}
+	.light {
+		stroke: #ccc;
+		stroke-width: 2px;
+	}
+	rect {
+		stroke: #999;
+		stroke-width: 2px;
+		fill: transparent;
+	}
+	/* ]]> */
+	</style>
+
+	<path class="light" d="M 0 50 h 450" />
+	<path class="light" d="M 0 100 h 450" />
+	<path class="light" d="M 0 200 h 450" />
+	<path class="light" d="M 0 250 h 450" />
+	<path class="light" d="M 0 350 h 450" />
+	<path class="light" d="M 0 400 h 450" />
+
+	<path class="light" d="M 50 0 v 450" />
+	<path class="light" d="M 100 0 v 450" />
+	<path class="light" d="M 200 0 v 450" />
+	<path class="light" d="M 250 0 v 450" />
+	<path class="light" d="M 350 0 v 450" />
+	<path class="light" d="M 400 0 v 450" />
+
+	<path class="strong" d="M 0 150 h 450" />
+	<path class="strong" d="M 0 300 h 450" />
+	<path class="strong" d="M 150 0 v 450" />
+	<path class="strong" d="M 300 0 v 450" />
+
+	<rect width="100%" height="100%" />
+</svg>
